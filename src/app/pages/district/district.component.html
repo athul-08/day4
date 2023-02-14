@@ -1,0 +1,14 @@
+<p>district works!</p>
+<div class="container text-center">
+    <div class="row">
+      <div class="col" *ngFor="let i of database">
+        <div class="card" style="width: 18rem;">
+            <img src={{i.image}} class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{i.District}}</h5>
+              <p class="card-text">{{i.description}}</p>
+              <a (click)="gotoHere(i.District)" class="btn btn-info">click here</a>
+            </div>
+          </div>
+    </div>
+    
